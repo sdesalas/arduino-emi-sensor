@@ -6,13 +6,16 @@
  * It works because Arduino analog pins are very sensitive when using
  * a 'floating ground' (ie when antenna is not connected to main ground).
  * 
- * (antenna)
- *  Y    +--------+
- *  |    |*      *|9 --O-| LED
- *  |  A1|*      *|8 --O-| LED
- *  |  A2|*      *|7 --O-| LED
- *  |- A3|*      *|6 --O-| LED
- *       |*      *|5     |
+ * DIAGRAM:
+ * 
+ * (Antenna)
+ *  Y
+ *  |    +--------+
+ *  |    |*      *|9 --O-| (Red LED)
+ *  |    |*      *|8 --O-| (Red LED)
+ *  |    |*      *|7 --O-| (Yellow LED)
+ *  |- A3|*      *|6 --O-| (Green LED)
+ *       |*      *|      |
  *       |*      *|GND --|
  *       +--------+
  */
