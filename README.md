@@ -7,8 +7,9 @@ A simple arduino-based sensor that detects electromagnetic inteference.
  * Arduino EMI Sensor
  * By Steven de Salas
  * 
- * A simple sensor that detects 
- * electromagnetic inteference.
+ * A simple sensor that detects electromagnetic inteference.
+ * It works because Arduino analog pins are very sensitive when using
+ * a 'floating ground' (ie when antenna is not connected to main ground).
  * 
  * (antenna)
  *  Y    +--------+
@@ -21,8 +22,8 @@ A simple arduino-based sensor that detects electromagnetic inteference.
  *       +--------+
  */
  
-int leds[] = { 6, 7, 8, 9};
-int thresholds[] = { 256, 512, 768, 950};
+int leds[] = { 6, 7, 8, 9 };
+int thresholds[] = { 256, 512, 768, 950 };
 
 void setup() {
   for (byte i = 0; i < 4; i++) {
