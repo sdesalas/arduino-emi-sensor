@@ -1,8 +1,17 @@
-# ardunio-emi-sensor
+# arduino-emi-sensor
 
 A simple arduino-based sensor that detects electrical currents (electromagnetic inteference).
 
 ![emi_sensor.gif](emi_sensor.gif)
+
+### Components
+
+- 1x Arduino Microcontroller
+- 1x Mini Breadboard
+- 1x 10-20cm cable lead
+- 1x Green LED
+- 1x Yellow LED
+- 2x Red LEDs
 
 ```c++
 /*
