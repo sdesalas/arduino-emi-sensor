@@ -1,6 +1,8 @@
 # ardunio-emi-sensor
 
-A simple arduino-based sensor that detects electromagnetic inteference.
+A simple arduino-based sensor that detects electrical currents (electromagnetic inteference).
+
+![emi_sensor.gif](emi_sensor.gif)
 
 ```c++
 /*
