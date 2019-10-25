@@ -19,19 +19,20 @@
  *       |*      *|GND --|
  *       +--------+
  */
- 
-int leds[] = { 6, 7, 8, 9 };
+
+int antenna = A0;
+int leds[] = { 2, 3, 4, 5 };
 int thresholds[] = { 256, 512, 768, 950 };
 
 void setup() {
   for (byte i = 0; i < 4; i++) {
     pinMode(leds[i], OUTPUT);
   }
-  pinMode(A3, INPUT);
+  pinMode(antenna, INPUT);
 }
 
 void loop() { 
-  int emi = analogRead(A3); 
+  int emi = analogRead(antenna); 
   for (byte i = 0; i < 4; i++) {
     digitalWrite(leds[i], emi > thresholds[i] ? 1 : 0);
   }
